@@ -6,7 +6,7 @@
     // the category, name, key, url, search path and color for your commands
     // if none of the specified keys are matched, the '*' key is used
     commands: [
-      [null, 'DuckDuckGo', '*', 'https://duckduckgo.com', '/?q={}', '#111'],
+      [null, 'DuckDuckGo', '*', 'https://duckduckgo.com', '/?q={}', '#E37051'],
       ['Work', 'Analytics', 'a', 'https://analytics.google.com', null, '#ff6d00'],
       ['Work', 'GitHub', 'g', 'https://github.com', '/search?q={}', '#333'],
       ['Work', 'Inbox', 'I', 'https://inbox.google.com', '/search/{}', '#4285f4'],
@@ -474,7 +474,7 @@
         if (cmdCategory === category) {
           return (
             `<li class="command">
-              <a href="${url}" target="${this._newTab ? '_blank' : '_self'}">
+              <a href="${url}">
                 <span class="command-key">${key}</span>
                 <span class="command-name">${name}</span>
               </a>
